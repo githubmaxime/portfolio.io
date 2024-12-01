@@ -1,0 +1,596 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- 
+    - primary meta tags
+  -->
+  <title>Maxime Leboeuf - Portfolio.</title>
+  <meta name="title" content="Maxime Leboeuf - Portfolio de developpeur Web.">
+  <meta name="description" content="Voici mon Portfolio">
+
+  <!-- 
+    - favicon
+  -->
+  <link rel="shortcut icon" href="./assets/images/logo.png" type="image/svg+xml">
+
+  <!-- 
+    - google font link
+  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./assets/font/font.css">
+
+  <!-- 
+    - custom css link
+  -->
+  <link rel="stylesheet" href="./assets/css/style.css">
+
+  <!-- 
+    - preload images
+  -->
+  <link rel="preload" as="image" href="">
+  <link rel="preload" as="image" href="./assets/images/hero-shape-1.png">
+  <link rel="preload" as="image" href="./assets/images/hero-shape-2.png">
+
+</head>
+
+<body id="top">
+
+  <!-- 
+    - #PRELOADER
+  -->
+
+  <div class="preloader" data-preloader>
+    <span class="line"></span>
+  </div>
+
+
+
+
+
+  <!-- 
+    - #HEADER
+  -->
+
+  <header class="header" data-header>
+    <div class="container">
+
+      <a href="#" class="logo">
+        <img src="./assets/images/logo.png" width="84" height="26" alt="logo">
+      </a>
+
+      <nav class="navbar" data-navbar>
+
+        <div class="navbar-top">
+          <a href="#" class="logo">
+            <img src="./assets/images/logo.png" width="84" height="26" alt="logo">
+          </a>
+
+          <button class="nav-close-btn" aria-label="close menu" data-nav-toggler>
+            <ion-icon name="close-outline" aria-hidden="true"></ion-icon>
+          </button>
+        </div>
+
+        <ul class="navbar-list">
+
+          <li>
+            <a href="#home" class="navbar-link" data-nav-link>Présentation</a>
+          </li>
+
+
+          <li>
+            <a href="#about" class="navbar-link" data-nav-link>Compétences</a>
+          </li>
+
+          <li>
+            <a href="#project" class="navbar-link" data-nav-link>Portfolio</a>
+          </li>
+
+          <li>
+            <a href="#contact" class="navbar-link" data-nav-link>Contact</a>
+          </li>
+
+        </ul>
+
+      </nav>
+
+      <button class="nav-open-btn btn:hover" aria-label="open menu" data-nav-toggler>
+        <span class="line line-1"></span>
+        <span class="line line-2"></span>
+      </button>
+
+      <div class="overlay" data-overlay data-nav-toggler></div>
+
+    </div>
+  </header>
+
+
+
+
+
+  <main>
+    <article>
+
+      <!-- 
+        - #Profil
+      -->
+
+      <div class="hero text-center" id="home">
+        <div class="container">
+
+          <div class="banner-outline has-after">
+
+            <div class="hero-banner img-holder has-after" style="--width: 500; --height: 680;" data-tilt>
+              <img src="./assets/images/imageronde.jpeg" width="500" height="680" alt="Bureau" class="img-cover">
+            </div>
+
+            <span class="span title">Maxime Leboeuf</span>
+
+          </div>
+
+          <div class="hero-content">
+
+            <h1 class="h1 title">A propos de moi.</h1>
+
+              <p class="hero-text">
+                <br>
+                Je m’appelle Maxime Leboeuf, j’ai 31 ans et je suis passionné par les nouvelles technologies et le développement web. 
+                <br>
+                <br>
+                Je suis fraichement diplômé d'une formation de Développeur Web (niveau Bac+2/3) sur OpenClassrooms. Mon parcours m’a permis d’acquérir des compétences en création et optimisation de sites web, 
+                appuyer par un développement modernes et performant. 
+                Curieux et rigoureux, je maîtrise les outils et langages essentiels comme HTML, CSS, JavaScript, React,
+                et me forme constamment aux nouvelles tendances du secteur.
+                <br>
+                <br>
+                Avec une approche orientée solution et un véritable souci du détail, 
+                je suis prêt à relever de nouveaux défis et à contribuer activement à la réussite de vos projets numériques.
+              </p>
+            </div>
+
+          </div>
+
+          <img src="./assets/images/hero-shape-1.png" width="559" height="232" alt="shape" class="shape shape-1">
+
+          <img src="./assets/images/hero-shape-2.png" width="1358" height="497" alt="shape" class="shape shape-2">
+
+        </div>
+      </div>
+
+
+
+      <!-- 
+        - #Competences
+      -->
+
+      <section class="section about" aria-label="about-me" id="about">
+        <div class="container">
+
+          <div class="tab-container">
+
+            <ul class="tab-btn-list">
+
+              <li class="tab-btn-item">
+                <button class="tab-btn title h6 active" data-tab-btn="about">Front-end</button>
+              </li>
+
+              <li class="tab-btn-item">
+                <button class="tab-btn title h6" data-tab-btn="skillset">Back-end</button>
+              </li>
+
+              <li class="tab-btn-item">
+                <button class="tab-btn title h6" data-tab-btn="awward">Autres</button>
+              </li>
+
+            </ul>
+
+            <div class="tab-content active" data-tab-content="about">
+              <div class="grid-list">
+
+                <figure class="about-banner img-holder" style="--width: ; --height: ;" data-tilt>
+                  <img src="./assets/images/banner.jpg" width="570" height="420" loading="lazy" alt="about banner"
+                    class="img-cover">
+                </figure>
+
+                <div class="about-content">
+
+                    <ul class="skill-list">
+
+                      <li>
+                        <div class="skill-wrapper">
+                          <span class="span">Html</span>
+                        </div>
+  
+                        <div class="progress-bar">
+                          <div class="progress-fill" style="width: 100%"></div>
+                        </div>
+                      </li>
+  
+                      <li>
+                        <div class="skill-wrapper">
+                          <span class="span">Css/Scss</span>
+                        </div>
+  
+                        <div class="progress-bar">
+                          <div class="progress-fill" style="width: 100%"></div>
+                        </div>
+                      </li>
+
+                      <li>
+                        <div class="skill-wrapper">
+                          <span class="span">JavaScript</span>
+                        </div>
+  
+                        <div class="progress-bar">
+                          <div class="progress-fill" style="width: 82%"></div>
+                        </div>
+                      </li>
+
+                      <li>
+                        <div class="skill-wrapper">
+                          <span class="span">React</span>
+                        </div>
+  
+                        <div class="progress-bar">
+                          <div class="progress-fill" style="width: 75%"></div>
+                        </div>
+                      </li>
+
+
+                    
+  
+                    </ul>
+
+                      </div>
+                    </li>
+
+                  </ul>
+
+                </div>
+
+              </div>
+            </div>
+
+            <div class="tab-content" data-tab-content="skillset">
+              <div class="grid-list">
+
+                <div class="skill-content">
+
+                  <ul class="skill-list">
+
+                    <li>
+                      <div class="skill-wrapper">
+                        <span class="span">Node.js/Express</span>
+                      </div>
+
+                      <div class="progress-bar">
+                        <div class="progress-fill" style="width: 95%"></div>
+                      </div>
+                    </li>
+
+                    <li>
+                      <div class="skill-wrapper">
+                        <span class="span">SQL/PHP</span>
+                      </div>
+
+                      <div class="progress-bar">
+                        <div class="progress-fill" style="width: 85%"></div>
+                      </div>
+                    </li>
+
+                    <li>
+                      <div class="skill-wrapper">
+                        <span class="span">MongoDB</span>
+                      </div>
+
+                      <div class="progress-bar">
+                        <div class="progress-fill" style="width: 85%"></div>
+                      </div>
+                    </li>
+
+                    <li>
+                      <div class="skill-wrapper">
+                        <span class="span">API</span>
+                      </div>
+
+                      <div class="progress-bar">
+                        <div class="progress-fill" style="width: 75%"></div>
+                      </div>
+                    </li>
+
+                  </ul>
+
+                </div>
+
+                <figure class="skill-banner img-holder" style="--width: 570; --height: 420;" data-tilt>
+                  <img src="./assets/images/skill-banner.jpg" width="570" height="420" loading="lazy" alt="skill banner"
+                    class="img-cover">
+                </figure>
+
+              </div>
+            </div>
+
+
+            <div class="tab-content" data-tab-content="awward">
+
+              <h3 class="h4 title section-title">
+                Technologies et Outils :
+              </h3>
+
+              <ul class="skill-list">
+
+                <li>
+                  <div class="skill-wrapper">
+                    <span class="span">Wordpress / Figma / Trello</span>
+                  </div>
+
+                  <div class="progress-bar">
+                    <div class="progress-fill" style="width: 100%"></div>
+                  </div>
+                </li>
+
+                <li>
+                  <div class="skill-wrapper">
+                    <span class="span">Visual Studio Code</span>
+                  </div>
+
+                  <div class="progress-bar">
+                    <div class="progress-fill" style="width: 90%"></div>
+                  </div>
+                </li>
+
+                <li>
+                  <div class="skill-wrapper">
+                    <span class="span">Gdocs / Suite Office</span>
+                  </div>
+
+                  <div class="progress-bar">
+                    <div class="progress-fill" style="width: 82%"></div>
+                  </div>
+                </li>
+
+                <li>
+                  <div class="skill-wrapper">
+                    <span class="span">Git / Github </span>
+                  </div>
+
+                  <div class="progress-bar">
+                    <div class="progress-fill" style="width: 75%"></div>
+                  </div>
+                </li>
+
+
+              
+
+              </ul>
+
+            </div>
+
+           
+
+                  </div>
+                </li>
+
+              </ul>
+            </div>
+
+          </div>
+
+        </div>
+      </section>
+
+
+
+
+
+      <!-- 
+        - Portfolio
+      -->
+
+      <section class="section cta" aria-label="work with me">
+        <div class="container">
+
+          <h2 class="title h2 section-title text-center">
+            Portfolio
+          </h2>
+
+        </div>
+      </section>
+
+
+
+
+
+      <!-- 
+        - #Projets
+      -->
+
+      <section class="section project" aria-label="my latest projects" id="project">
+
+        <ul class="slider-list">
+
+          <li class="slider-item">
+            <div class="project-card text-center">
+
+              <div class="card-banner img-holder has-before" style="--width: 1000; --height: 763;">
+                <img src="./assets/images/kaza.png" width="1000" height="763" loading="lazy"
+                  alt="Entreprise de location d’appartements entre particuliers" class="img-cover">
+
+                <a href="https://github.com/githubmaxime/projet5kasa.git" class="btn btn:hover">
+                  <span class="span">Lien du Projet</span>
+
+                  <ion-icon name="arrow-forward" aria-hidden="true"></ion-icon>
+                </a>
+              </div>
+
+              <div class="card-content">
+                <p class="card-subtitle">Kaza : Entreprise de location d’appartements entre particuliers</p>
+
+                <h3 class="title h3">
+                  <a class="card-title">Création une application web de location immobilière avec React</a>
+                </h3>
+              </div>
+
+            </div>
+          </li>
+
+          <li class="slider-item">
+            <div class="project-card text-center">
+
+              <div class="card-banner img-holder has-before" style="--width: 1000; --height: 763;">
+                <img src="./assets/images/sophie.png" width="1000" height="763" loading="lazy"
+                  alt="Portfolio d’une architecte d’intérieur." class="img-cover">
+
+                <a href="https://github.com/githubmaxime/projet3.git" class="btn btn:hover">
+                  <span class="span">Lien du Projet</span>
+
+                  <ion-icon name="arrow-forward" aria-hidden="true"></ion-icon>
+                </a>
+              </div>
+
+              <div class="card-content">
+                <p class="card-subtitle">Sophie Bluel : Portfolio d’une architecte d’intérieur.</p>
+
+                <h3 class="title h3">
+                  <a class="card-title">Création d’une page web dynamique avec JavaScript</a>
+                </h3>
+              </div>
+
+            </div>
+          </li>
+
+          <li class="slider-item">
+            <div class="project-card text-center">
+
+              <div class="card-banner img-holder has-before" style="--width: 1000; --height: 763;">
+                <img src="./assets/images/mvg.png" width="1000" height="763" loading="lazy"
+                  alt="Site de notation de livres" class="img-cover">
+
+                <a href="https://github.com/githubmaxime/projet6mvg.git" class="btn btn:hover">
+                  <span class="span">Lien du Projet</span>
+
+                  <ion-icon name="arrow-forward" aria-hidden="true"></ion-icon>
+                </a>
+              </div>
+
+              <div class="card-content">
+                <p class="card-subtitle">Mon vieux grimoire : Site de notation de livres</p>
+
+                <h3 class="title h3">
+                  <a  class="card-title">Realisation du Back-end du site</a>
+                </h3>
+              </div>
+
+            </div>
+          </li>
+
+        </ul>
+
+      </section>
+
+
+
+
+      <!-- 
+        - #Contact
+      -->
+
+      <section class="section contact" aria-label="contact me" id="contact">
+        <div class="container">
+
+          <h2 class="title h2 section-title">Contactez-moi :</h2>
+
+
+          <ul class="contact-list">
+
+            <li class="contact-item">
+
+              <div class="item-icon">
+                <img src="./assets/images/contact-icon-1.png" width="50" height="50" loading="lazy"
+                  alt="contact icon">
+              </div>
+
+              <div>
+                <span class="title h6">Numéro de téléphone :</span>
+
+                <span class="title h6">07 82 69 28 28</span>
+              </div>
+
+            </li>
+
+            <li class="contact-item">
+
+              <div class="item-icon">
+                <img src="./assets/images/contact-icon-3.png" width="50" height="50" loading="lazy"
+                  alt="contact icon">
+              </div>
+
+              <div>
+                <span class="title h6">Adresse Mail :</span>
+
+                <span class="title h6">max62217@hotmail.com</span>
+              </div>
+
+            </li>
+
+          </ul>
+
+        </div>
+      </section>
+
+    </article>
+  </main>
+
+
+
+
+
+  <!-- 
+    - #FOOTER
+  -->
+
+  <footer class="footer">
+    <div class="container">
+
+      <p class="copyright">
+        © Copyright 2024 - Maxime Leboeuf. Tous droits réservés.
+      </p>
+
+      <a href="#top" class="back-top-btn">
+        <span class="span">Retour à l'accueil</span>
+
+        <ion-icon name="arrow-up" aria-hidden="true"></ion-icon>
+      </a>
+
+    </div>
+  </footer>
+
+
+
+
+
+  <!-- 
+    - #CUSTOM CURSOR
+  -->
+
+  <div class="cursor-dot" data-cursor></div>
+  <div class="cursor-outline" data-cursor></div>
+
+
+
+
+
+  <!-- 
+    - custom js link
+  -->
+  <script src="./assets/js/script.js"></script>
+
+</body>
+
+</html>
